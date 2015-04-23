@@ -7,11 +7,11 @@ function getHour(now, after){
   return (now +after) % 24 ;
 }
 
-function showTestResult(now, after){
+function showTestResult(now){
 
-  if (0>now || now>23){
+  if(now == null){
+    return "fail"
 
-  return null
   }
-  return (now +after) % 24 ;
+  return "success"
 }
